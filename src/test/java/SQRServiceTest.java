@@ -6,7 +6,7 @@ import ru.netology.sqr.SQRService;
 public class SQRServiceTest {
 
     @ParameterizedTest
-    @CsvFileSource(files = "src/test/resources/sqrts.csv")
+    @CsvFileSource(files = "src/test/resources/sqrt.csv")
     public void shouldCalcTheAmount(int expected, int left, int right) {
         SQRService service = new SQRService();
 

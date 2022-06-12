@@ -2,14 +2,14 @@ package ru.netology.sqr;
 
 public class SQRService {
     public int calcSqrtAmount(int left, int right) {
-        int x = 99;
-        int am = 0;
+        int maxNum = 99;
+        int counter = 0;
 
-        for (int i = 10; i <= x; i++) {
+        for (int i = 10; i <= maxNum; i++) {
             if (i * i >= left && i * i <= right) {
-                am++;
+                counter++;
             }
         }
-        return am;
+        return counter;
     }
 }
